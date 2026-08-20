@@ -9,6 +9,8 @@
     "assemblyNames": [ "ZhonTai.Module.Dev.Api" ],
     //枚举列表程序集名称
     "EnumListAssemblyNames": [ "ZhonTai.Module.Dev.Api", "ZhonTai.Module.Dev.Api.Contracts" ],
+    //是否启用枚举列表接口
+    "EnableEnumListApi": false,
     //租户
     "tenant": true,
     //分布式事务唯一标识app，为空则不生成分布式事务表
@@ -47,8 +49,10 @@
         {
           "name": "中台开发管理",
           "code": "dev",
-          "version": "v10.0.3",
-          "description": "ZhonTai.Module.Dev"
+          "version": "v10.1.0",
+          "description": "ZhonTai.Module.Dev",
+          //自动同步接口到数据库
+          "autoSyncToDb": false
         }
       ]
     },
@@ -78,8 +82,6 @@
       // 记录日志方式 Grpc | Cap
       "method": "Grpc"
     },
-    //限流
-    "rateLimit": false,
     //验证码
     "varifyCode": {
       //启用

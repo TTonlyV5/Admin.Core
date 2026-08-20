@@ -841,5 +841,50 @@
     "modifiedUserName": "admin",
     "modifiedUserRealName": null,
     "modifiedTime": "2024-07-12T21:39:13"
+  },
+  {
+    "id": 836339991150661,
+    "platform": "app",
+    "parentId": 0,
+    "name": null,
+    "label": "系统管理",
+    "path": null,
+    "description": null,
+    "cache": true,
+    "sort": 1,
+    "enabled": true,
+    "childs": [
+      {
+        "id": 836340092096581,
+        "platform": "app",
+        "parentId": 836339991150661,
+        "name": "sys/pkg",
+        "label": "套餐管理",
+        "path": "/pages-system/pkg/index",
+        "description": null,
+        "cache": true,
+        "sort": 1,
+        "enabled": true,
+        "childs": [],
+        "isDeleted": false,
+        "createdUserId": 161223411986501,
+        "createdUserName": "admin",
+        "createdUserRealName": "管理员",
+        "createdTime": "2026-08-10T16:16:34",
+        "modifiedUserId": null,
+        "modifiedUserName": null,
+        "modifiedUserRealName": null,
+        "modifiedTime": null
+      }
+    ],
+    "isDeleted": false,
+    "createdUserId": 161223411986501,
+    "createdUserName": "admin",
+    "createdUserRealName": "管理员",
+    "createdTime": "2026-08-10T16:16:09",
+    "modifiedUserId": null,
+    "modifiedUserName": null,
+    "modifiedUserRealName": null,
+    "modifiedTime": null
   }
 ]

@@ -1,0 +1,27 @@
+# use example
+# tye run --watch tye.yaml --port 10000
+
+name: zhontai
+services:
+- name: zhontai-gateway-yarp-host
+  project: gateways\\ZhonTai.Gateway.Yarp.Host\\ZhonTai.Gateway.Yarp.Host.csproj
+  bindings:
+    - protocol: http
+      port: 16010
+- name: zhontai-imserver-host
+  project: modules\\im\\ZhonTai.IMServer.Host\\ZhonTai.IMServer.Host.csproj
+  bindings:
+    - protocol: http
+      port: 17010
+- name: zhontai-admin-host
+  project: modules\\admin\\ZhonTai.Admin.Host\\ZhonTai.Admin.Host.csproj
+  bindings:
+    - protocol: http
+      port: 18010
+      routes: [/doc/admin, /doc/admin/swagger]
+- name: zhontai-dev-host
+  project: modules\\dev\\ZhonTai.Module.Dev\\ZhonTai.Module.Dev.Host\\ZhonTai.Module.Dev.Host.csproj
+  bindings:
+    - protocol: http
+      port: 18020
+      routes: [/doc/dev, /doc/dev/swagger]
